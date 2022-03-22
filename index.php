@@ -5,7 +5,7 @@ $password = "root";
 $schema = "todo";
 
 try {
-    $conn = new PDO("mysql:host=$sercername;dbname=$schema", $usernam, $password);
+    $conn = new PDO("mysql:host=$servername;dbname=$schema", $usernam, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     echo "Connected Successfully";
 } catch(PDOException $e) {
