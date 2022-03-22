@@ -1,4 +1,7 @@
 <?php
+
+echo "Hello World";
+
 $servername = "localhost";
 $username = "root";
 $password = "root";
