@@ -2,7 +2,7 @@
   $db_host = 'localhost';
   $db_user = 'root';
   $db_password = 'root';
-  $db_db = 'Image_Sharing_Platform';
+  $db_db = 'todo';
  
   $mysqli = @new mysqli(
     $db_host,
