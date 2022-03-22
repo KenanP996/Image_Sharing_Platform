@@ -34,7 +34,7 @@
 ?>
 <?php
 $sql = "SELECT * FROM `todo`";
-$result = mysqli_query($sql);
+$result = mysqli_query($conn, $sql);
 print_r($result);
 
 ?>
