@@ -27,8 +27,11 @@
   echo '<br>';
   echo 'Protocol version: '.$mysqli->protocol_version;
 
-  $sql = "SELECT * FROM `todo`";
+
 
   $mysqli->close();
 
+?>
+<?php
+  $sql = "SELECT * FROM `todo`";
 ?>
