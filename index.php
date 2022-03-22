@@ -6,6 +6,7 @@
   $db_user = 'root';
   $db_password = 'root';
   $db_db = 'Image_Sharing_Platform';
+  $conn = mysqli_connect($servername, $username, $password, $dbname);
  
   $mysqli = @new mysqli(
     $db_host,
