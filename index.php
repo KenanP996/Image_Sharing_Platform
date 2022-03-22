@@ -27,10 +27,12 @@
   echo '<br>';
   echo 'Protocol version: '.$mysqli->protocol_version;
 
-  $mysqli->close();
-
   $stmt = $conn->prepare("SELECT * FROM todo");
   $stmt->execute();
   $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
   print_r($result);
+
+  $mysqli->close();
+
+
 ?>
