@@ -33,5 +33,5 @@
 
 ?>
 <?php
-  $sql = "SELECT * FROM `todo`";
+$sql = "SELECT * FROM `todo`";
 ?>
