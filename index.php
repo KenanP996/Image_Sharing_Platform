@@ -5,7 +5,7 @@
   $db_host = 'localhost';
   $db_user = 'root';
   $db_password = 'root';
-  $db_db = 'information_schema';
+  $db_db = 'Image_Sharing_Platrform';
  
   $mysqli = @new mysqli(
     $db_host,
