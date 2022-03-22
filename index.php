@@ -29,8 +29,8 @@
 
   $sql = "SELECT * FROM `todo`";
   $result = mysqli_query($conn, $sql);
-  echo $result;
 
-  $mysqli->close();
+
+
 
 ?>
