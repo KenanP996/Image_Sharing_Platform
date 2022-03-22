@@ -33,7 +33,7 @@
 
 ?>
 <?php
-$query = "SELECT * FROM `todo`";
-echo $query;
+$sql = "SELECT * FROM `todo`";
+echo $sql;
 
 ?>
