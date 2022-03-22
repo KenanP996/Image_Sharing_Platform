@@ -27,14 +27,10 @@
   echo '<br>';
   echo 'Protocol version: '.$mysqli->protocol_version;
 
-
+  $sql = "SELECT * FROM `todo`";
+  $result = mysqli_query($conn, $sql);
+  print_r($result);
 
   $mysqli->close();
-
-?>
-<?php
-$sql = "SELECT * FROM `todo`";
-$result = mysqli_query($conn, $sql);
-print_r($result);
 
 ?>
