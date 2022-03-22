@@ -1,28 +1,14 @@
 <?php
-  $db_host = 'localhost';
-  $db_user = 'root';
-  $db_password = 'root';
-  $db_db = 'todo';
- 
-  $mysqli = @new mysqli(
-    $db_host,
-    $db_user,
-    $db_password,
-    $db_db
-  );
-	
-  if ($mysqli->connect_error) {
-    echo 'Errno: '.$mysqli->connect_errno;
-    echo '<br>';
-    echo 'Error: '.$mysqli->connect_error;
-    exit();
-  }
+$servername = "localhost";
+$username = "root";
+$password = "root";
+$schema = "todo";
 
-  echo 'Success: A proper connection to MySQL was made.';
-  echo '<br>';
-  echo 'Host information: '.$mysqli->host_info;
-  echo '<br>';
-  echo 'Protocol version: '.$mysqli->protocol_version;
-
-  $mysqli->close();
+try {
+    $conn = new PDO("mysql:host=$sercername;dbname=$schema", $usernam, $password);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    echo "Connected Successfully";
+} catch(PDOException $e) {
+    echo "Connection failed: " . $e->getMessage();
+}
 ?>
