@@ -29,7 +29,7 @@
 
   $sql = "SELECT * FROM `todo`";
   $result = mysqli_query($conn, $sql);
-  print_r($result);
+  echo $result;
 
   $mysqli->close();
 
